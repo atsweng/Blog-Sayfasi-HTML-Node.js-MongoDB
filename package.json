@@ -1,0 +1,33 @@
+{
+  "name": "projenodejs",
+  "version": "1.0.0",
+  "description": "Proje Application",
+  "main": "app.js",
+  "scripts": {
+    "boot": "nodemon app.js"
+  },
+  "author": "",
+  "licance": "ISC",
+  "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.5",
+    "body-parser": "^1.19.0",
+    "connect-mongo": "^3.2.0",
+    "exphbs": "^1.2.0",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "express-handlebars": "^5.3.3",
+    "express-session": "^1.17.2",
+    "method-override": "^3.0.0",
+    "moment": "^2.29.1",
+    "mongo": "^0.1.0",
+    "mongoose": "^6.0.8",
+    "mongoose-timestamp": "^0.6.0",
+    "nodemailer": "^6.6.3",
+    "routes": "^2.1.0",
+    "v5": "^0.1.2"
+  },
+  "devDependencies": {
+    "handlebars": "^4.7.7",
+    "nodemon": "^2.0.13"
+  }
+}

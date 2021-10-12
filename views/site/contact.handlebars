@@ -1,0 +1,62 @@
+<!--==========================
+    INSIDE HERO SECTION Section
+============================-->	
+<section class="page-image page-image-contact md-padding">
+    <h1 class="text-white text-center">İLETİŞİM</h1>
+</section>
+    
+    <!--==========================
+    Contact Section
+============================-->
+<section id="contact" class="md-padding">
+	<div class="container">
+
+			<div class="row text-center">
+				<div class="col-md-4 offset-md-4">
+					<div class="section-header">
+						<h2 class="title">Bizimle İletişime Geçin</h2>
+					</div>
+				</div>
+			</div>
+
+		<div class="row">
+			<div class="col-lg-12">
+				{{#if sessionFlash.message}}
+				<div class="{{sessionFlash.type}}">
+					{{sessionFlash.message}}
+				</div>
+				{{/if}}
+				<form method="POST" action="/contact/email">
+					<div class="row">
+						<div class="col-md-6">
+							<div class="form-group">
+								<input class="form-control" name="name" type="text" placeholder="Adınız *" required="required" data-validation-required-message="Lütfen Adınızı Girin">
+								<p class="help-block text-danger"></p>
+							</div>
+							<div class="form-group">
+								<input class="form-control" name="email" type="email" placeholder="Email Adresiniz *" required="required" data-validation-required-message="Lütfen Email Adresinizi Girin">
+								<p class="help-block text-danger"></p>
+							</div>
+							<div class="form-group">
+								<input class="form-control" name="phone" type="tel" placeholder="Telefon Numaranız *" data-validation-required-message="Lütfen Telefon Numaranızı Girin">
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="form-group">
+								<textarea class="form-control" name="message" placeholder="Mesajınız *" required="required" data-validation-required-message="Lütfen Mesajınızı Girin"></textarea>
+								<p class="help-block text-danger"></p>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="col-lg-12 text-center">
+							<div id="success"></div>
+							<button class="main-btn" type="submit">Mesaj Gönder</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+</section>
